@@ -1,4 +1,4 @@
-## Paper reading assignment- 1
+## Reading Assignment - 1
 
 ## 1. Gmail Smart Compose: Real-Time Assisted Writing
 
