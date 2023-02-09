@@ -29,34 +29,34 @@ Follow these instructions to get the project up and running on your local machin
 
 1. Clone the repository
 
-git clone https://github.com/<your-username>/pdf-resume-extractor.git
+### `git clone https://github.com/<your-username>/pdf-resume-extractor.git`
 
 2. Navigate to the project directory
 
-cd pdf-resume-extractor
+### `cd pdf-resume-extractor`
 
 3. Install the Python dependencies
 
-pip install -r requirements.txt
+### `pip install -r requirements.txt`
 
 4. Navigate to the client directory
 
-cd client
+### `cd client`
 
 5. Install the Node.js dependencies
 
-npm install
+### `npm install`
 
 
 ### Running the Application
 
 1. Start the FastAPI server
 
-python main.py
+### `python main.py`
 
 2. Start the ReactJS client
 
-npm start
+### `npm start`
 
 The application will be accessible at http://localhost:3000 in your web browser.
 
