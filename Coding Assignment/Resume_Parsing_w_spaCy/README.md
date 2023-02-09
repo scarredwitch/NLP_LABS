@@ -66,7 +66,7 @@ The application will be accessible at http://localhost:3000 in your web browser.
 The homepage looks like this.
 You can either drag a resume in the box or upload a resume and submit. 
 
-<img src ='figure/homepage.png' width = 300cm>
+<img src ='figure/homepage.png'>
 
 
 Then, at the bottom you get these results.
