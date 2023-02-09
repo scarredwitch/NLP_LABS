@@ -61,5 +61,18 @@ Follow these instructions to get the project up and running on your local machin
 The application will be accessible at http://localhost:3000 in your web browser.
 
 
+# Here is how the website works
+
+The homepage looks like this.
+You can either drag a resume in the box or upload a resume and submit. 
+
+<img src ='figure/homepage.png'>
+
+Then, at the bottom you get these results.
+
+<img src ='figure/result.png'>
+
+
+
 ## Contributors
 Thank you to Ayush and Sandhya for helping me in the backend and frontend of the website making. Thanks to Ati for the jsonl pipeline used in this project. Thanks to Chaky for this wonderful assignment.
