@@ -1,5 +1,4 @@
 ## Research Paper summaries for Natural Language Processing
-____
 
 ## 1. Gmail Smart Compose: Real-Time Assisted Writing
 
@@ -37,15 +36,11 @@ ____
 | Topic  | Neural Machine Translation for Paraphrase Generation |
 |--------------|--------------------------------------------------------------------------------------------------------|
 | Problem | Alexa Skill Kit (ASK) work flow's accuracy and user experience greatly depends on the data provided by the skill developer and manual annotations are expensive and time consuming. |
-| Proposed Solution |asdfadfasdfa |
-| Key Related Work | 1. Cho et al. (2014) developed an encoder-decoder architecture where encoder encoded source language to a vector representation with last hidden state containing complete sentence information. The decoder output one word at a time getting additional context each step by taking previous generated word as input. <br /> 2. Sutskever et al. (2014) demonstrated that n-best paraphrase hypotheses were generated through left-to-right beam search during decoding. <br /> 3. Schuster and Paliwal (1997) demonstrated the improved performance of bidirectional LSTM on longer sequences. This is utilized in the paper for the first layer where LSTM hidden states of each timestep summarizes preceding and following words. |
-| Method |Train a neural network classifier to make parsing decisions within a transition-based dependency parser. Introduce a novel activation function for this neural network that captures higher-order interaction features. |
-|  Results | 1. Fast computation while achieving 2% improvement in UAS and LAS on both English and Chinese datasets. <br /> 2. Outperforms other greedy parsers using sparse indicator features in both accuracy and speed.|
-| Future work | Authors developed a parser that outperforms current parsers and made a significant contribution to field of NLP. In future, authors hope to combine this neural network based classifier with search based models to further improve accuracy.|
+| Proposed Solution | Machine Translation inspired encoder-decoder deep recurrent neural network |
+| Key Related Work | 1. Cho et al. (2014) developed an encoder-decoder architecture where encoder encoded source language to a vector representation with last hidden state containing complete sentence information. The decoder output one word at a time getting additional context each step by taking previous generated word as input. <br /> 2. Sutskever et al. (2014) demonstrated that n-best paraphrase hypotheses were generated through left-to-right beam search during decoding. <br /> 3. Schuster and Paliwal (1997) demonstrated the improved performance of bidirectional LSTM on longer sequences. This is utilized in the paper for the first layer where LSTM hidden states of each timestep summarizes preceding and following words. <br /> 4. Pennington et al. (2014) showcased how GloVe embedding could reduce the model parameter space giving more robustness to rare words and synonyms.|
+| Method | Followed the architecture of Cho et al. (2014) with GloVe embedding and bidirectional LSTM. A standard MT model was trained for English to French parallel corpus as well as training on in-domain English paraphrase corpus following three training schemes. |
+|  Results | 1. Quantitative Results - All tested skills have four or more times improvement on the bigram coverage score compared to their baselines. <br /> 2. Qualitative Analysis - Limited vocabulary and shorter length of in-domain sentences result in smaller word error rate and better translation quality than out-of-domain corpora. The paraphrase model with copying mechanism has increased output diversity but only conserves intent and slots. In contrast, the one without it produces better grammar sentences and even propagates correct entities sometimes. |
+| Future work | 1. Tagging existing French corpus or translating the in-domain data to French (with slots). <br /> 2. Decoupling decoder training from encoder training by conditioning it on input slot sequence instead. |
 
-
-
-
-solution: machine translation inspired encoder-decoder deep recurrent neural network
 ____
 ____
