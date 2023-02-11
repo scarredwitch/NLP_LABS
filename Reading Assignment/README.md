@@ -1,4 +1,5 @@
-## Reading Assignment - 1
+## Research Paper summaries for Natural Language Processing
+____
 
 ## 1. Gmail Smart Compose: Real-Time Assisted Writing
 
@@ -12,19 +13,6 @@
 | Conclusion | The Smart Compose system aims to improve the writing experience of Gmail users by providing real-time, context-dependent, and diverse suggestions as they type. The system has been designed to overcome challenges such as model design, evaluation, serving, privacy, and fairness, and has been enhanced with features such as personalization and multilingual support. The authors of the paper have conducted extensive experiments comparing the performance of different model and serving architectures and have demonstrated that the Smart Compose system is effective in improving the writing experience for Gmail users.|
 
 ____
-
-## 2. A Fast and Accurate Dependency Parser using Neural Networks
-
-### Authors: Danqi Chen and Christopher D. Manning
-
-| Topic  | A Fast and Accurate Dependency Parser using Neural Networks |
-|--------------|--------------------------------------------------------------------------------------------------------|
-| Problem | Dependency Parser cannot handle complex real-world sentences in a fast and accurate manner |
-| Key Related Work | 1. Koo et al. (2008) demonstrated improved parsing performance through techniques like word class features.<br /> 2. Bohnet (2010) reports inefficiency of his baseline parser in terms of feature extraction. <br /> 3. Collobert et al. (2011) successfully displayed the efficiency of distributed word representations in NLP task like POS tagging.|
-| Method |Train a neural network classifier to make parsing decisions within a transition-based dependency parser. Introduce a novel activation function for this neural network that captures higher-order interaction features. |
-|  Results | 1. Fast computation while achieving 2% improvement in UAS and LAS on both English and Chinese datasets. <br /> 2. Outperforms other greedy parsers using sparse indicator features in both accuracy and speed.|
-| Future work | Authors developed a parser that outperforms current parsers and made a significant contribution to field of NLP. In future, authors hope to combine this neural network based classifier with search based models to further improve accuracy.|
-
 ____
 
 ## 2. A Fast and Accurate Dependency Parser using Neural Networks
@@ -39,4 +27,33 @@ ____
 |  Results | 1. Fast computation while achieving 2% improvement in UAS and LAS on both English and Chinese datasets. <br /> 2. Outperforms other greedy parsers using sparse indicator features in both accuracy and speed.|
 | Future work | Authors developed a parser that outperforms current parsers and made a significant contribution to field of NLP. In future, authors hope to combine this neural network based classifier with search based models to further improve accuracy.|
 
+____
+____
+
+## 3. Neural Machine Translation for Paraphrase Generation
+
+### Authors: Alex Sokolov, Denix Filimonov
+
+| Topic  | Neural Machine Translation for Paraphrase Generation |
+|--------------|--------------------------------------------------------------------------------------------------------|
+| Problem | Alexa Skill Kit (ASK) work flow's accuracy and user experience greatly depends on the data provided by the skill developer and manual annotations are expensive and time consuming. |
+| Proposed Solution |asdfadfasdfa |
+| Key Related Work | 1. Cho et al. (2014) developed an encoder-decoder architecture where encoder encoded source language to a vector representation with last hidden state containing complete sentence information. The decoder output one word at a time getting additional context each step by taking previous generated word as input. <br /> 
+2. Sutskever et al. (2014) demonstrated that n-best paraphrase hypotheses were generated through left-to-right beam search during decoding. <br /> 
+3. Schuster and Paliwal (1997) demonstrated the improved a bidirectional LSTM  |
+
+
+
+
+
+
+| Method |Train a neural network classifier to make parsing decisions within a transition-based dependency parser. Introduce a novel activation function for this neural network that captures higher-order interaction features. |
+|  Results | 1. Fast computation while achieving 2% improvement in UAS and LAS on both English and Chinese datasets. <br /> 2. Outperforms other greedy parsers using sparse indicator features in both accuracy and speed.|
+| Future work | Authors developed a parser that outperforms current parsers and made a significant contribution to field of NLP. In future, authors hope to combine this neural network based classifier with search based models to further improve accuracy.|
+
+
+
+
+solution: machine translation inspired encoder-decoder deep recurrent neural network
+____
 ____
