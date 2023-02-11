@@ -40,12 +40,7 @@ ____
 | Proposed Solution |asdfadfasdfa |
 | Key Related Work | 1. Cho et al. (2014) developed an encoder-decoder architecture where encoder encoded source language to a vector representation with last hidden state containing complete sentence information. The decoder output one word at a time getting additional context each step by taking previous generated word as input. <br /> 
 2. Sutskever et al. (2014) demonstrated that n-best paraphrase hypotheses were generated through left-to-right beam search during decoding. <br /> 
-3. Schuster and Paliwal (1997) demonstrated the improved a bidirectional LSTM  |
-
-
-
-
-
+3. Schuster and Paliwal (1997) demonstrated the improved performance of bidirectional LSTM on longer sequences. This is utilized in the paper for the first layer where LSTM hidden states of each timestep summarizes preceding and following words. |
 
 | Method |Train a neural network classifier to make parsing decisions within a transition-based dependency parser. Introduce a novel activation function for this neural network that captures higher-order interaction features. |
 |  Results | 1. Fast computation while achieving 2% improvement in UAS and LAS on both English and Chinese datasets. <br /> 2. Outperforms other greedy parsers using sparse indicator features in both accuracy and speed.|
