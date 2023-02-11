@@ -12,7 +12,7 @@
 | Conclusion | The Smart Compose system aims to improve the writing experience of Gmail users by providing real-time, context-dependent, and diverse suggestions as they type. The system has been designed to overcome challenges such as model design, evaluation, serving, privacy, and fairness, and has been enhanced with features such as personalization and multilingual support. The authors of the paper have conducted extensive experiments comparing the performance of different model and serving architectures and have demonstrated that the Smart Compose system is effective in improving the writing experience for Gmail users.|
 
 
-## A Fast and Accurate Dependency Parser using Neural Networks
+## 2. A Fast and Accurate Dependency Parser using Neural Networks
 
 ### Authors: Danqi Chen and Christopher D. Manning
 
