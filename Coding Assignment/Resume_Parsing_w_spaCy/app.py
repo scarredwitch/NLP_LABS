@@ -1,13 +1,25 @@
-
-from fastapi import FastAPI, UploadFile, File, HTTPException
+from fastapi import FastAPI, File, UploadFile
+import pandas as pd
+import requests
 from resume import readPDF
+from fastapi.middleware.cors import CORSMiddleware
+
 app = FastAPI()
 
-@app.post("/pdf")
-async def create_pdf(pdf: UploadFile):
-    
-    # Do some processing with the file
-    skills,educations = readPDF(pdf.file)
-    dict = {"skills":skills,"educations":educations}
-    return dict
-   
+origins = [
+    "http://localhost",
+    "http://localhost:3000",
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+@app.post("/pdf_to_dataframe")
+async def pdf_to_dataframe(pdf: UploadFile):
+    response = readPDF(pdf.file)
+    return response

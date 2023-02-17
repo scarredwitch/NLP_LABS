@@ -1,10 +1,11 @@
 import spacy
+import pandas as pd
 from PyPDF2 import PdfReader
 from spacy.lang.en.stop_words import STOP_WORDS
 
 
-nlp = spacy.load('en_core_web_md') #sm &
-skill_path = "../../data/skills_educations.jsonl"
+nlp = spacy.load('en_core_web_md')
+skill_path = "C:\\Users\\Sirikit Joshi\\Desktop\\lab5\\skills_educations.jsonl"
 
 ruler = nlp.add_pipe("entity_ruler")
 ruler.from_disk(skill_path)
@@ -25,24 +26,22 @@ def preprocessing(sentence):
     return " ".join(cleaned_tokens)
 
 def readPDF(cv_path, page=5):
-    
     reader = PdfReader(cv_path)
-    page1= reader.pages[page]
-    text = page1.extract_text()
+    page = reader.pages[page]
+    text = page.extract_text()
     text = preprocessing(text)
     doc = nlp(text)
-    print(doc.ents)
+
     skills = []
     educations = []
 
     for ent in doc.ents:
-        print(ent.label_)
         if ent.label_ == 'SKILL':
             skills.append(ent.text)
         if ent.label_ == 'EDUCATION':
             educations.append(ent.text)
-    return set(skills), set(educations)
-
-if __name__=="__main__":
-    skills, educations = readPDF('../../data/someone_cv.pdf')
-    print(educations)
+    skills = set(skills)
+    education = set(educations)
+    dict1 = {'skills':skills,'education_status':education}
+    #df = pd.DataFrame.from_dict(dict1, orient='index')
+    return dict1
