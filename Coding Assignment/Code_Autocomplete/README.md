@@ -12,6 +12,6 @@ BI-LSTM Language Model for Autocode completion on codeparrot
 * flask 
 
 ## Features 
-some of the screenshot of my frontend looks like :
+Screenshot of my front page and the results for autocomplete
 <p align="center"><img src="figures/homepage.png"></p>
 <p align="center"><img src="figures/pandas.png"></p>
