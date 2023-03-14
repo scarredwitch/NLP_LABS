@@ -66,9 +66,8 @@ ____
 |-----|--------------------------|
 | Problems | Large models are computationally costly to share and serve where a separate copy of the model is required for each downstream task. Prompt-based adaptation has drawbacks such as - task description is error-prone and requires human involvement.|
 | Proposed Solution | <ol><li>Single generalist model can simultaneously serve for multiple downstream tasks.</li><li>Conditioning a frozen model with soft prompts shows many benefits in terms of robustness in domain transfer and enables efficient "prompt ensembling".</li></ol>|
-| Proposed Solution | 1. Single generalist model can simultaneously serve for multiple downstream tasks. <br />2. Conditioning a frozen model with soft prompts shows many benefits in terms of robustness in domain transfer and enables efficient "prompt ensembling".|
 | Related Work | 1. AutoPrompt: Eliciting Knowledge from Language Models with Automatically Generated Prompts <br /><ul><li>Shin et al. (2020) propose a search algorithm over the discrete space of words guided by downstream application training data.</li><li>This technique outperforms manual prompt design but there is still a gap relative to model tuning.</li></ul>2. Prefix-tuning: Optimizing continuous prompts for generation <br /><ul><li>Li and Liang (2021) show strong results on generative tasks with their proposed method 'prefix tuning' where the model parameters are frozen and the error is backpropagated during tuning.</li></ul>3. WARP: Word-level Adversarial ReProgramming<br /><ul><li>Hambardzumyan et al. (2021) simplify previous research by restricting trainable parameters to the input and output sub-networks of an MLM with reasonable results on classification tasks.</li></ul>|
-| Method | <ul><li>item1</li><li>item2</li></ul>|
+| Method | <ul><li>Method 1</li><li>Method 2</li></ul>|
 | Experiment | |
 | Results | |
 | Discussion | |
