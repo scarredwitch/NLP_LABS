@@ -56,3 +56,18 @@ ____
 | Experiment | Six pre-trained models in both general and biomedical domains i.e. <br />&emsp;1) BERT-Large <br />&emsp;2)  RoBERTa Large <br />&emsp;3)BioBERT-Base <br />&emsp;4) PubMedBERT-Base <br />&emsp;5) SciBERT-Base <br />&emsp;6) BC-RoBERTa-Large (Biomedical-Clinical RoBERTa-Large) <br /> In all the model learning rate is set to be 1*10^-5 and batch size 2 and max epoch is 10. |
 | Results | 1. Results on MedNLI<br />&emsp;- pre-trained models with paraphrases for rare biomedical words can outperform the baselines in all cases and can bring about 6% improvement on average for fewshot learning with 16 training samples and 2% with 256 training samples.<br />2. Results on MedSTS<br />&emsp;- similar to MedNLI in terms of improved performance, for some cases, statistical significance is not as stable as that on MedNLI |
 | Discussion | Train with more samples to achieve greater improvement results |
+
+____
+____
+## 5. The Power of Scale for Parameter-Efficient Prompt Tuning
+
+### Authors: Brian Lester, Rami Al-Rfou, Noah Constant
+| Topic | The Power of Scale for Parameter-Efficient Prompt Tuning |
+|-----|--------------------------|
+| Problems | Large models are computationally costly to share and serve where a separate copy of the model is required for each downstream task. Prompt-based adaptation has drawbacks such as - task description is error-prone and requires human involvement.|
+| Proposed Solution | 1. Single generalist model can simultaneously serve for multiple downstream tasks. <br />2. Conditioning a frozen model with soft prompts shows many benefits in terms of robustness in domain transfer and enables efficient "prompt ensembling".|
+| Related Work | 1. AutoPrompt: Eliciting Knowledge from Language Models with Automatically Generated Prompts <br />&emsp;- Shin et al. (2020) propose a search algorithm over the discrete space of words guided by downstream application training data.<br />&emsp;- This technique outperforms manual prompt design but there is still a gap relative to model tuning.<br />2. Prefix-tuning: Optimizing continuous prompts for generation <br />&emsp;- Li and Liang (2021) show strong results on generative tasks with their proposed method 'prefix tuning' where the model parameters are frozen and the error is backpropagated during tuning.<br />3. WARP: Word-level Adversarial ReProgramming<br />&emsp;- Hambardzumyan et al. (2021) simplify previous research by restricting trainable parameters to the input and output sub-networks of an MLM with reasonable results on classification tasks. |
+| Method | |
+| Experiment | |
+| Results | |
+| Discussion | |
