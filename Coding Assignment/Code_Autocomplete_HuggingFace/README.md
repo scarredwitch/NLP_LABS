@@ -13,9 +13,6 @@ Wikitext-2 datset is a large language modeling dataset consisting of approximate
 ## Tokenizer
 We use CodeSearchNet Tokenizer to preprocess source code for use in code search and retrieval systems.
 
-## Result
-
-
 ## Web Deployment
-
-
+Screenshot of my results for autocomplete
+<p align="center"><img src="figures/result.png"></p>

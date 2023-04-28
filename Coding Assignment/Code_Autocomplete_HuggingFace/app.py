@@ -35,6 +35,7 @@ def autocomplete():
     print("...........",source)
     gen = pipe(text)[0]["generated_text"]
     print(gen)
+    cd
     form.text.data = source
     data = {"source":source, "predict":gen}
     print(data)
