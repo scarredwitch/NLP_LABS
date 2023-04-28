@@ -16,3 +16,6 @@ We use CodeSearchNet Tokenizer to preprocess source code for use in code search 
 ## Web Deployment
 Screenshot of my results for autocomplete
 <p align="center"><img src="figures/result.png"></p>
+
+## Inspiration
+I would like to thank Todsavad for inspiration for web page and Ayush for helping me deploy it.

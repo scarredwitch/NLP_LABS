@@ -17,3 +17,6 @@ We use 'basic_english' tokenizer to split sentences into a sequence of words bas
 Screenshot of my front page and the results for autocomplete
 <p align="center"><img src="figures/homepage.png"></p>
 <p align="center"><img src="figures/result.png"></p>
+
+## Inspiration
+I would like to thank Todsavad for inspiration for web page and Ayush for helping me deploy it.
