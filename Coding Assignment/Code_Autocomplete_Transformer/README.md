@@ -20,4 +20,6 @@ We use 'basic_english' tokenizer to split sentences into a sequence of words bas
 
 
 ## Features 
-*Under Construction*
+Screenshot of my front page and the results for autocomplete
+<p align="center"><img src="figures/homepage.png"></p>
+<p align="center"><img src="figures/result.png"></p>
